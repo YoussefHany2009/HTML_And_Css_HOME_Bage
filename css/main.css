@@ -1,0 +1,241 @@
+/*Ruls*/
+:root{
+  --main-color:#003285;
+  --secon-color:#f6f6f6;
+  --main-time:0.3s;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/*End Ruls*/
+/*header*/
+.header {
+background-color: var(--secon-color);
+color: #fff;
+padding: 1rem 0;
+}
+
+.header .text {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.header .text h1 {
+font-size: 2.5rem;
+margin-bottom: 0.5rem;
+color: var(--main-color);
+}
+@media (max-width: 768px){
+.header .text h1 {
+  width: 100%;
+  text-align: center;
+  color: var(--main-color);
+}
+}
+.header .text .links {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 1rem 0;
+}
+@media (max-width: 768px){
+.header .text .links{
+  width: 100%;
+}
+}
+.header .text .links a {
+color: #000;
+margin: 0 0.5rem;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.header .text .links a:hover {
+background-color: var(--main-color);
+}
+
+.header .text .links a.active {
+background-color: var(--main-color);
+}
+/*header End */
+/*landing */
+.landing {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(to bottom right, #f1f1f1, #ccc);
+}
+
+.landing .container {
+max-width: 500px;
+margin: 0 auto;
+padding: 20px;
+background-color: #fff;
+border: 1px solid #ddd;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+
+.landing .container .text {
+text-align: center;
+}
+
+.landing .container .text h2 {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 10px;
+color: #333;
+text-shadow: 2px 2px #fff;
+}
+
+.landing .container .text p {
+font-size: 18px;
+color: #666;
+}
+
+/*animations*/
+.landing {
+animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+.landing .container.text h2 {
+animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+0% {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+100% {
+  transform: translateY(0);
+  opacity: 1;
+}
+}
+
+.landing .container.text p {
+animation: slideIn 1s ease-in-out 0.5s;
+}
+
+@keyframes slideIn {
+0% {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+}
+
+/*landing End*/
+/*htmlandcssProjects Start */
+.htmlandcssProjects .Main-title{
+text-align: center;
+font-size: 30px;
+padding: 20px;
+}
+.htmlandcssProjects .Grip {
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+  gap: 40px;
+  margin: 50px 50px 30px;
+}
+.htmlandcssProjects .Grip .card{
+  background-color: var(--secon-color);
+  padding: 20px 20px;
+  transition: var(--main-time);
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px black ;
+}
+.htmlandcssProjects .Grip .card:hover{
+  margin-top: -30px;
+  box-shadow: 0 0 50px blue;
+}
+.htmlandcssProjects .Grip .card-red{
+  box-shadow: 0 0 15px black;
+}
+.htmlandcssProjects .Grip .card-red:hover{
+  box-shadow: 0 0 50px red;
+}
+.htmlandcssProjects .Grip .card img{
+  max-width: 100%;
+}
+.htmlandcssProjects .Grip .card .text{
+  width: 100%;
+}
+.htmlandcssProjects .Grip .card .text h2{
+  color: var(--main-color);
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+}
+.htmlandcssProjects .Grip .card .text p {
+  font-size: 19px;
+  margin: 15px;
+}
+.htmlandcssProjects .Grip .card .text .Done-msg{
+  color: green;
+  width: 75%;
+  font-size: 15px;
+}
+.htmlandcssProjects .Grip .card .text .UnDone-msg{
+  color: red;
+  width: 75%;
+  font-size: 15px;
+}
+.htmlandcssProjects .Grip .card hr{
+  margin-bottom: 15px;
+}
+.htmlandcssProjects .Grip .card a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 50px;
+  background-color: var(--main-color);
+  transition: var(--main-time);
+  
+}
+.htmlandcssProjects .Grip .card:hover a{
+  border-radius: 15px;
+}
+/*htmlandcssProjects End */
