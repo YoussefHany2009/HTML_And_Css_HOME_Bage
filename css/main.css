@@ -246,3 +246,18 @@ padding: 20px;
   border-radius: 15px;
 }
 /*htmlandcssProjects End */
+/*Start footer */
+footer{
+  text-align: center;
+  background-color: var(--secon-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer p {
+  color: red;
+  font-size: 22px;
+}
+footer p span{
+  color: blue;
+}
+/*End footer*/
