@@ -38,6 +38,7 @@ donewid4.addEventListener("mouseenter" , function(){
 donewid4.addEventListener("mouseleave" , function(){
   donemsg4.style.display="none";
 })
+//HTML Elements
 const donewid5 = document.getElementById("Done-wid5");
 const donemsg5 = document.getElementById("Done-msg5");
 //Event Listener
@@ -46,4 +47,14 @@ donewid5.addEventListener("mouseenter" , function(){
 })
 donewid5.addEventListener("mouseleave" , function(){
   donemsg5.style.display="none";
+})
+//HTML Elements
+const donewid6 = document.getElementById("Done-wid6");
+const donemsg6 = document.getElementById("Done-msg6");
+//Event Listener
+donewid6.addEventListener("mouseenter" , function(){
+  donemsg6.style.display="block";
+})
+donewid6.addEventListener("mouseleave" , function(){
+  donemsg6.style.display="none";
 })
